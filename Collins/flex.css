@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato:ital", sans-serif;
+}
+
+body {
+    color: #434343;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1440px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-inline: auto;
+
+}
+
+.top-section {
+    background-color: #ffffffd3;
+    padding-bottom: 80px;
+}
+
+/* header */
+.top-section header {
+    /* background-color: rgb(106, 109, 106); */
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000000;
+    z-index: 1000;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    opacity: 0;
+    animation: fadein 900ms linear forwards;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header section {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+header section:last-child {
+    gap: 40px;
+}
+
+header div div {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+header nav a {
+    gap: 40px;
+    padding: 4px 2px;
+    border-bottom: 2px solid transparent;
+}
+
+header nav a:hover {
+    border-bottom-color: currentColor;
+}
+
+header section:last-child a:first-child {
+    padding: 10px 24px;
+    border: 1px solid #ff0000;
+    color: currentColor;
+    background-color: transparent;
+}
+
+header section:last-child a {
+    padding: 10px 24px;
+    border-radius: 8px;
+    background-color: #ff0101;
+    color: white;
+}
+
+.hero {
+    /* background-color: rgb(0, 154, 243); */
+    color: rgb(255, 255, 255);
+    /* padding: 0 5%; */
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    background-image: url(./Images/Storebanks_slider.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero>div {
+    flex: 1 1 400px;
+    margin: 80px 0 40px;
+}
+
+.hero h1 {
+    font-size: clamp(30px, 3vw, 50px);
+    opacity: 0;
+    animation: fadein 900ms 950ms linear forwards;
+}
+
+.hero h2 {
+    font-size: clamp(25px, 2.2vw, 40px);
+    margin: 20px 0;
+    max-width: 400px;
+    font-weight: 500;
+    opacity: 0;
+    animation: fadein 900ms 1.5s linear forwards;
+}
+
+.hero p {
+    opacity: 0;
+    animation: fadein 900ms 1.7s linear forwards;
+}
+
+.hero .email {
+    margin-top: 40px;
+    background-color: #fff;
+    width: fit-content;
+    display: flex;
+    gap: 5px;
+    align-items: stretch;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 2px;
+    border: 0.5px solid #eee;
+    opacity: 0;
+    animation: fadein 900ms 2s linear forwards;
+}
+
+.hero .email:focus-within {
+    border-color: rgb(0, 0, 0);
+}
+
+.hero input {
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.hero .partners {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    opacity: 0;
+    animation: fadein 900ms 2.5s linear forwards;
+}
+
+.partners img {
+    max-width: 150px;
+}
+
+.hero .big {
+    width: 320px;
+    height: 380px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(5, 5, 5, 0.67);
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadein 900ms 3s linear forwards;
+}
+
+.hero .small {
+    width: 250px;
+    height: 300px;
+    background-color: #434343;
+    border-radius: 10px;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    opacity: 0;
+    animation: fadein 900ms 3.2s linear forwards;
+}
+
+.hero aside {
+    border: solid rgb(255, 0, 0) 4px;
+    position: relative;
+}
+
+.hero .right {
+    display: flex;
+    justify-content: center;
+}
+
+.hero button {
+    background-color: #434343;
+    color: white;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 12px;
+}
+
+.hero button:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.hero * {
+    animation: slideup 2s linear forwards;
+}
+
+/* .hero video {
+    padding: 20px;
+   margin-left: 300px;  
+} */
+
+input[type="button"] {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    /* position: fixed;
+    right: 20px;
+    bottom: 20px; */
+}
+
+.experience {
+    background-color: #ffffff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    /* margin-top: -100px; */
+    position: relative;
+    top: -100px;
+    padding: 40px 60px;
+    border-radius: 14px;
+}
+
+main {
+    padding-inline: 40px;
+}
+
+.experience header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    margin-bottom: 40px;
+}
+
+.experience header div:last-child {
+    max-width: 500px;
+}
+
+.experience header h2 {
+    margin-top: 10px;
+    font-size: clamp(28px, 2vw, 38px);
+    max-width: 400px;
+}
+
+.card_container {
+    display: flex;
+    gap: 80px;
+}
+
+.card_container div {
+    /* width: 10px;
+    height: 100px;
+    background-color: rgb(90, 90, 90); */
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+ion-icon {
+    font-size: 50px;
+}
+
+.experience h4 {
+    font-size: 23px;
+}
+
+/* prefer */
+.prefer header {
+    text-align: center;
+}
+
+.prefer header h2 {
+    font-size: clamp(28px, 2vw, 38px);
+    margin-top: 10px;
+}
+
+.prefer .card {
+    background-color: black;
+    border-radius: 16px;
+    padding: 40px;
+}
+
+.prefer .card_container {
+    margin-top: 40px;
+    gap: 40px;
+    color: white;
+}
+
+.prefer .title {
+    font-size: clamp(30px, 3vw, 50px);
+    font-weight: 700;
+}
+
+.prefer .card p:not(.title) {
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.prefer .small {
+    font-size: clamp(20px, 2vw, 28px);
+    font-weight: 400;
+}
+
+.prefer .card div {
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 40px;
+}
+
+.prefer ion-icon {
+    font-size: 30px;
+    position: relative;
+}
+
+/* .prefer ion-icon::before {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(250, 1, 1);
+    z-index: -10;
+} */
+
+.prefer span {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(73, 73, 73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50px;
+}
+
+.analytics {
+    display: flex;
+    padding: 40px;
+    border-radius: 16px;
+    gap: 40px;
+    background-color: black;
+    margin-block: 80px;
+    perspective: 800px;
+    perspective-origin: top-left;
+}
+
+.analytics {
+    margin-bottom: 24px;
+    font-size: 28px;
+}
+
+.analytics div {
+    flex: 2 1 0;
+}
+
+.analytics p {
+    max-width: 500px;
+}
+
+.analytics div:last-child {
+    height: 300px;
+    background-color: #ffffff;
+    flex: 3 1 0;
+    border-radius: 10px;
+    transition: transform 2s cubic-bezier(1, -0.12, 0, 1.19);
+    /* animation-name: spin, color;
+    animation-duration: 3s, 4s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+    animation-direction: normal; */
+    /* animation-play-state: normal; */
+    /* animation-fill-mode: forwards; */
+    /* &:hover {
+        transform: translateX(-120px);
+    } */
+}
+
+.analytics div:last-child:hover {
+    transform: rotatey(360deg);
+}
+
+/* @keyframes spin {
+    to {
+        transform: rotateX(360deg);
+    }
+} */
+
+/* @keyframes color {
+    0% {
+        background-color: rgb(255, 255, 255);
+    }
+
+    25% {
+        background-color: rgb(255, 0, 0);
+    }
+
+    50% {
+        background-color: rgb(255, 238, 0);
+    }
+
+    75% {
+        background-color: rgb(9, 255, 0);
+    }
+
+    100% {
+        background-color: rgb(17, 0, 255);
+    }
+} */
+
+@keyframes fadein {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideup {
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* steps */
+.steps {
+    padding-block: 40px;
+    background-color: black;
+    margin-block: 80px;
+    color: rgb(255, 255, 255);
+}
+
+.steps h3 {
+    font-size: clamp(25px, 2vw, 32px);
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.steps_container {
+    margin-top: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.steps_container div {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(77, 77, 77);
+}
+
+.steps_container span {
+    font-size: 60px;
+    position: relative;
+    background-image: linear-gradient(white, rgb(102, 102, 105) 68%, rgb(83, 83, 83) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+
+}
+
+.steps_container h4 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}

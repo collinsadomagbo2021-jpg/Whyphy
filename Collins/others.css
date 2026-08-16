@@ -1,0 +1,27 @@
+.square {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: blue;
+
+    animation: colorchange 5s infinite;
+
+}
+
+@keyframes colorchange {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: pink;
+    }
+    50% {
+        background-color: rgb(71, 250, 0);
+    }
+    75% {
+        background-color: rgb(38, 0, 255);
+    }
+    100% {
+        background-color: rgb(238, 255, 0);
+    }
+}

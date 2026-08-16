@@ -1,0 +1,134 @@
+/* */
+/* */
+/* */
+
+
+/* *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+p,
+h1,
+a {
+    border: red 2px;
+    margin: 2px;
+    padding: 20px;
+    width: 200px;
+}
+
+img {
+    width: 200px;
+}
+
+a {
+    display: inline;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#red_text {
+    color: red;
+}
+.marked {
+    background-color: yellow;
+    width:fit-content;
+}
+
+*{
+    text-transform: uppercase;
+} 
+
+.marked:hover {
+    background-color: blue;
+}
+
+.marked::first-letter {
+    color: red;
+    font-size: 40px;
+}
+
+[type="password"] {
+    border-width: 5px;
+    border-color: aqua;
+}
+[type="text"] {
+    border-width: 5px;
+    border-color: red;
+}
+
+.sub_container p:first-child ~ p {
+    text-align: center;
+} */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 34%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    background-color: hsl(113, 97%, 47%);
+    width: 500px;
+    margin: 100px auto  12px;
+    padding: 40px;
+    border-radius: 120px/20px;
+
+}    
+q {
+    font-size: 20px;
+    text-align: justify;
+    display: inline-block;
+    text-align-last: center;
+}
+
+hr {
+    margin: 40px 0;
+    border-color: #333;
+}
+
+span {
+    height: 60px;
+    width: 60px;
+    background-color: hsl(48, 27%, 24%);
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    border-radius: 50%;
+
+}
+
+
+table, th, td {
+    color: white;
+    /* border-width: 2px; */
+    border-style: solid;
+    /* border-color: red; */
+    border-collapse: collapse;
+    margin: 50px;
+}
+
+table {
+    width: 80%;
+    border-radius: 20px;
+}
+
+th,
+td {
+    padding: 30px;
+    text-align: center;
+}
+
+tr:nth-child(odd){
+    background-color: hsl(0, 0%, 0%);
+}
